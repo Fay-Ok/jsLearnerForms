@@ -85,9 +85,6 @@
 
         for (var i = 0; i < vectors.length; i++) {
             if (magnitude(vectors[i]) < maxMagnitude) {
-
-                //console.log(i, " , " + magnitude(vectors[i]) + " maxMagnitude " + maxMagnitude);
-                //console.log(vectorMagnitude.length, "!!!!!!!!");
                 vectorMagnitude[vectorMagnitude.length] = vectors[i];
 
             }
