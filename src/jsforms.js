@@ -1,31 +1,14 @@
 (function() {
     'use strict';
-
-    module.experts = {};
-
-})();
-
-(function() {
-    'use strict';
-
-
+    
     function greet(greeting) {
-        return 'Hello!';
-    }
-
-    module.exports = {
-        greet: greet
-    };
-})();
-
-(function() {
-    'use strict';
-    function greet(greeting) {
-        if (greeting === undefined) {
-            return 'Hello!';
-        } else {
-            return greeting + '!';
+        var message = 'Hello';
+        
+        if (greeting !== undefined) {
+            message = greeting;
         }
+           return message + '!';
+        
     }
 
     function square(sqeNumber) {
