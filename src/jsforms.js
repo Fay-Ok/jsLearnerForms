@@ -1,14 +1,11 @@
-(function() {
+(function () {
     'use strict';
-    
+
     function greet(greeting) {
-        var message = 'Hello';
-        
-        if (greeting !== undefined) {
-            message = greeting;
-        }
-           return message + '!';
-        
+        var message = greeting !== undefined ? greeting : 'Hello';
+
+        return message + '!';
+
     }
 
     function square(sqeNumber) {
@@ -46,11 +43,11 @@
     function bildVector(value) {
         var vector = value.slice(0);
 
-        vector.valueOf = function() {
+        vector.valueOf = function () {
             return this.slice(0);
         };
 
-        vector.toString = function() {
+        vector.toString = function () {
             return '<' + this.valueOf().toString() + '>';
         };
 
