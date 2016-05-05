@@ -16,12 +16,19 @@
         return Math.sqrt(num, 2);
     }
 
+    function add(number1, number2) {
+        return number1 + number2;
+    }
+
     function sum(nums) {
-        var cumulator = 0;
-        for (var i = 0; i < nums.length; i++) {
-            cumulator += nums[i];
-        }
-        return cumulator;
+        var finalSum = 0;
+        nums.forEach(function (value) {
+            
+            finalSum = add(finalSum, value);
+        });
+
+
+        return finalSum;
     }
 
     function squareAll(sqAll) {
