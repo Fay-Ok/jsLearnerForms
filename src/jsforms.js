@@ -32,14 +32,8 @@
     }
 
     function squareAll(sqAll) {
-        var count = 0;
-        var sqArray = [];
-
-        for (var i = 0; i < sqAll.length; i++) {
-            count = square(sqAll[i]);
-            sqArray[i] = count;
-        }
-        return sqArray;
+      var squaredArray = sqAll.map(square);
+      return squaredArray;
     }
 
     function sumOfSquares(nums) {
